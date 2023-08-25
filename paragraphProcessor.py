@@ -21,7 +21,7 @@ class ParagraphProcessor(searchParagraph.SearchParagraph):
         with open(self.outputFile, 'w') as out_file:
              out_file.write(content)
 
-    #Método para 
+    #Método para processar o texto, a fim de identificar frase no arquivo
     def ProcessParagraphs(self, input_content):
         sentences = []
         paragraph = ""
@@ -33,7 +33,7 @@ class ParagraphProcessor(searchParagraph.SearchParagraph):
                 paragraph = ""
         
         if sentences:
-            
+
             new_paragraph = []
 
             for sentence in sentences:
