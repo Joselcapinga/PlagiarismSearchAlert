@@ -1,14 +1,1 @@
-What is Lorem Ipsum?
- Lorem Ipsum is simply dummy text of the printing and typesetting industry.
- Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
- It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
- It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-Há uma necessidade clara de desenvolver e disponibilizar uma ferramenta que ajude a comunidade acadêmica a elaborar textos de forma mais eficaz e precisa, evitando plágio e erros acidentais.
- As técnicas de detecção de plágio baseadas em conteúdo são amplamente usadas para identificar similaridade entre textos.
- Ao contrário das ferramentas existentes, que processam o texto após sua elaboração, a ferramenta proposta realizará o processamento em tempo real, alertando o autor sobre os resultados enquanto o texto é escrito.
- Isso promoverá a integridade acadêmica e servirá como um recurso educacional para estudantes, professores e pesquisadores, ajudando-os a compreender a importância da originalidade e desenvolver habilidades de escrita desde o início.
-
-Com essa ferramenta, os alunos, professores e pesquisadores poderão receber feedback imediato sobre a originalidade de seus trabalhos, permitindo que aprendam com seus erros e aprimorem suas habilidades de pesquisa e redação.
- Além de prevenir plágio, ela incentivará a adoção de boas práticas acadêmicas e a busca constante para melhoria na qualidade dos trabalhos.
- A ferramenta proposta será uma contribuição valiosa para a comunidade acadêmica, ajudando-a a manter altos padrões de integridade e qualidade em suas produções acadêmicas.
+Geeksforgeeks.

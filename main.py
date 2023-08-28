@@ -1,9 +1,14 @@
-from loop import Loop
+import os
+from app.loop import Loop
 
 
 if __name__ == "__main__":
 
-    input_file    = "entrada.txt"
-    outputt_file  = "saida.txt"
-    loop = Loop(input_file, outputt_file)
+    dir  = 'file_text_test'
+    file = 'entrada.txt'
+
+    dir_file = os.path.join(dir, file)
+    time     = 10 
+
+    loop = Loop(file, time)
     loop.mainLoop()
