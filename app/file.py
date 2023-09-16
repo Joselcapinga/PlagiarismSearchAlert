@@ -1,5 +1,4 @@
 class File:
-    
 
     def create(self, fileMonitoring, fileSavedParagraphs):
         import os
@@ -29,18 +28,6 @@ class File:
     def IdentifyParagraphs(self, contents):
         
         try:
-            # sentences = []
-            # current_sentence = ''
-            # sentence_delimiters = ['.', '!', '?']
-
-            # for char in contents:
-            #     current_sentence += char
-            #     if char in sentence_delimiters:
-            #         sentences.append(current_sentence.strip())
-            #         current_sentence = ''
-
-            # if current_sentence:
-            #     sentences.append(current_sentence.strip())
 
             sentence_delimiters = ['.', '!', '?']
             sentences = []
