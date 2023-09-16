@@ -29,9 +29,22 @@ class File:
     def IdentifyParagraphs(self, contents):
         
         try:
+            # sentences = []
+            # current_sentence = ''
+            # sentence_delimiters = ['.', '!', '?']
+
+            # for char in contents:
+            #     current_sentence += char
+            #     if char in sentence_delimiters:
+            #         sentences.append(current_sentence.strip())
+            #         current_sentence = ''
+
+            # if current_sentence:
+            #     sentences.append(current_sentence.strip())
+
+            sentence_delimiters = ['.', '!', '?']
             sentences = []
             current_sentence = ''
-            sentence_delimiters = ['.', '!', '?']
 
             for char in contents:
                 current_sentence += char
@@ -39,10 +52,9 @@ class File:
                     sentences.append(current_sentence.strip())
                     current_sentence = ''
 
-            if current_sentence:
-                sentences.append(current_sentence.strip())
+            frases = [sentence for sentence in sentences if any(sentence.endswith(delimiter) for delimiter in sentence_delimiters)]
 
-            return sentences
+            return frases
 
         except FileNotFoundError:
             return []
