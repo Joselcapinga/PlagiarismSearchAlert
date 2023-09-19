@@ -7,6 +7,7 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
 from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.platypus import PageBreak
 from reportlab.lib.enums import TA_CENTER
+import docx
 
 
 class FileUI:
@@ -114,24 +115,39 @@ class FileUI:
 
     # Função para salvar o conteúdo em PDF com formatação
     def SalvarPDF(self):
-        conteudo_paragrafos = self.CarregarParagrafosIdentificados()
+        try:
+            conteudo_paragrafos = self.CarregarParagrafosIdentificados()
 
-        if conteudo_paragrafos:
-            # Crie um arquivo PDF com o conteúdo formatado
-            doc = SimpleDocTemplate(self.relatorioPDF, pagesize=letter)
-            styles = getSampleStyleSheet()
+            if conteudo_paragrafos:
+                # Crie um arquivo PDF com o conteúdo formatado
+                doc = SimpleDocTemplate(self.relatorioPDF, pagesize=letter)
+                styles = getSampleStyleSheet()
 
-            # Crie um Paragraph personalizado com alinhamento centralizado
-            cabecalho = Paragraph("<center>Relatório</center>", styles["Heading1"])
-            conteudo = [cabecalho]
+                # Crie um Paragraph personalizado com alinhamento centralizado
+                cabecalho = Paragraph("<center>Relatório</center>", styles["Heading1"])
+                conteudo = [cabecalho]
 
-            # Adicione o conteúdo dos parágrafos com quebras de linha
-            paragrafos = conteudo_paragrafos.split("\n\n")
-            for paragrafo in paragrafos:
-                p = Paragraph(paragrafo, styles["Normal"])
-                conteudo.append(p)
-                conteudo.append(Spacer(1, 12))  # Espaço entre os parágrafos
+                # Adicione o conteúdo dos parágrafos com quebras de linha
+                paragrafos = conteudo_paragrafos.split("\n\n")
+                for paragrafo in paragrafos:
+                    p = Paragraph(paragrafo, styles["Normal"])
+                    conteudo.append(p)
+                    conteudo.append(Spacer(1, 12))  # Espaço entre os parágrafos
 
-            # Construa o arquivo PDF
-            doc.build(conteudo)
-            # sg.popup("PDF salvo com sucesso!", title="Salvar PDF")
+                # Construa o arquivo PDF
+                doc.build(conteudo)
+                return 1
+        except:
+            return 0
+
+    def SalvarDoc(self, conteudo):
+        
+        try:
+            doc = docx.Document()
+            doc.add_paragraph(conteudo)
+            doc.save('document_exportado.docx')
+            return 1
+        except:
+            return 0
+
+

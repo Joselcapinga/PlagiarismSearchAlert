@@ -18,6 +18,7 @@ class TelaUI(fileUI.FileUI, similar.Similar):
         sg.set_options(element_padding=(0, 0))
 
         menu = [
+            ['&Configurações', ['Manual de usabilidade da ferramenta']],
             ['&File', ['&Salvar o conteúdo', '&Relatório PDF', '&Sair X']],
             ['&Help', ['Manual de usabilidade da ferramenta']]
         ]
@@ -34,11 +35,21 @@ class TelaUI(fileUI.FileUI, similar.Similar):
             
             ],
             [sg.Text("", size=(40, 1))],
-            [sg.Text("Area resultados: Paragrafo e Links", size=(40, 1), justification='center', font=('Helvetica', 12, 'bold'))],
+            [
+                [sg.Text("Paragrafo, Links com conteúdos semelhantes", justification='center', font=('Helvetica', 12, 'bold'))],
+                #  sg.Text(str(self.quantLinks), size=(40, 1), justification='center', font=('Helvetica', 12, 'bold'), key='-QUANTIDADELINKS-')],
+                [sg.Text("Quantidade de links atual:", font=('Helvetica', 12, 'bold')),
+                sg.Text(str(self.quantLinks), size=(40, 1), justification='center', font=('Helvetica', 12, 'bold'), key='-QUANTIDADELINKS-')]
+
+            ],
+            [
+                
+            ],
             [sg.Multiline(size=(40, 10), key="-RESULTADO-", expand_x=True, expand_y=True, default_text= self.CarregarParagrafosIdentificados())],
             [sg.Text("", size=(40, 1))],  # Margem superior entre a Multiline e o botão "Relatório PDF"
             [
-                sg.Button(f"Quantidade de links: {self.quantLinks}", font=('Helvetica', 12, 'bold'), key='-INCREMENTELINKS-'),
+                sg.Button("+ links", font=('Helvetica', 12, 'bold'), key='-INCREMENTELINKS-'),
+                sg.Button("- links", font=('Helvetica', 12, 'bold'), key='-DECREMENTELINKS-'),
                 sg.Button("Relatório PDF", font=('Helvetica', 12, 'bold')), 
                 sg.Button("Sair X", font=('Helvetica', 12, 'bold')),
                 
@@ -81,21 +92,36 @@ class TelaUI(fileUI.FileUI, similar.Similar):
                 break
 
             elif event == "Salvar o conteúdo":
-
                 conteudo = values["-EDITAR-"]
                 self.SalvarConteudo(conteudo)
-                self.IdentificarESalvarParagrafos(conteudo)
+                self.IdentificarESalvarParagrafos(conteudo, self.quantLinks)
                 conteudo_paragrafos = self.CarregarParagrafosIdentificados()
                 self.window["-RESULTADO-"].update(conteudo_paragrafos)
                 sg.popup("Conteúdo salvo com sucesso!")
 
-            elif event == "-INCREMENTELINKS-":
+            elif event == "-INCREMENTELINKS-" and self.quantLinks < 10:
                 self.quantLinks += 1
-                self.window['-INCREMENTELINKS-'].update(f'Quantidade de links: {self.quantLinks}' )
+                self.window['-QUANTIDADELINKS-'].update(str(self.quantLinks))
+            
+            elif event == "-DECREMENTELINKS-" and self.quantLinks > 3:
+                self.quantLinks -= 1
+                self.window['-QUANTIDADELINKS-'].update(str(self.quantLinks))
 
             elif event == "Relatório PDF":
                 self.SalvarPDF()
                 sg.popup("PDF salvo com sucesso!", title="Salvar PDF")
-    
-            
+
+            elif event == "Exportar .doc":
+                conteudo = values["-EDITAR-"]
+
+                if conteudo:
+                    self.SalvarDoc(conteudo)
+                    if self.SalvarDoc(conteudo) == 1:
+                        sg.popup('Conteúdo exportado sucesso para "document_exportado.docx"')
+                    else:
+                        sg.popup('Erro ao exportar conteúdo para "document_exportado.docx"')
+                else:
+                    sg.popup('Não existe conteúdo para exportar no "document_exportado.docx"')
+        
+        
         self.window.close()
