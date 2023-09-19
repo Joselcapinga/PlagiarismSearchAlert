@@ -18,9 +18,15 @@ class TelaUI(fileUI.FileUI, similar.Similar):
         sg.set_options(element_padding=(0, 0))
 
         menu = [
-            ['&Configurações', ['Manual de usabilidade da ferramenta']],
-            ['&File', ['&Salvar o conteúdo', '&Relatório PDF', '&Sair X']],
-            ['&Help', ['Manual de usabilidade da ferramenta']]
+            # ['&Configurações', ['Manual de usabilidade da ferramenta']],
+            ['&File', [
+                       '&Salvar o conteúdo', 
+                       '&Relatório PDF',
+                       '&Exportar .doc', 
+                       '&Sair X', 
+                       ]
+            ],
+            ['&Ajudas', ['&Manual de usabilidade da ferramenta']]
         ]
 
         #criação do layout
@@ -45,7 +51,7 @@ class TelaUI(fileUI.FileUI, similar.Similar):
             [
                 
             ],
-            [sg.Multiline(size=(40, 10), key="-RESULTADO-", expand_x=True, expand_y=True, default_text= self.CarregarParagrafosIdentificados())],
+            [sg.Multiline(size=(40, 10), key="-RESULTADO-", expand_x=True, expand_y=True, disabled=True, default_text= self.CarregarParagrafosIdentificados())],
             [sg.Text("", size=(40, 1))],  # Margem superior entre a Multiline e o botão "Relatório PDF"
             [
                 sg.Button("+ links", font=('Helvetica', 12, 'bold'), key='-INCREMENTELINKS-'),
@@ -83,6 +89,17 @@ class TelaUI(fileUI.FileUI, similar.Similar):
             self.window["-RESULTADO-"].update(conteudo_paragrafo)
 
 
+    # Função para exibir a caixa de diálogo de ajuda
+    def AjudassMenu(self):
+        sg.popup("Aqui estão as instruções de ajuda:",
+                "1. Area de Editar: Onde será editado o texto que sera consultado a semeliaridade no google search.",
+                "2. Botão Salvar o conteúdo: Salva o contúdo da area de Editar",
+                "3. Botão Exportar .doc: exporta docx do conteúdo da area de edição",
+                "4. Os botões '+ links' e '- links' para ajustar a quantidade de links.",
+                "5. Botão 'Relatório PDF' exporta um relatório do conteúdo da area Paragrafos, Links no formato PDF.",
+                "6. Botão 'Sair X' para fechar o programa.",
+                title="Instruções de Ajuda")
+
     def LoopUI(self):
 
         while True:
@@ -110,6 +127,10 @@ class TelaUI(fileUI.FileUI, similar.Similar):
             elif event == "Relatório PDF":
                 self.SalvarPDF()
                 sg.popup("PDF salvo com sucesso!", title="Salvar PDF")
+
+            elif event == "Manual de usabilidade da ferramenta":
+                self.AjudassMenu()
+
 
             elif event == "Exportar .doc":
                 conteudo = values["-EDITAR-"]
