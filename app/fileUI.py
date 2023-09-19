@@ -21,6 +21,7 @@ class FileUI:
 
         self.CriarArquivos()
  
+
     def CriarArquivos(self):
         
         import os
@@ -40,8 +41,9 @@ class FileUI:
             with open(self.fileMonitoramento, "w") as arquivo:
                 arquivo.write(conteudo)
 
+
     # Função para identificar e salvar parágrafos em 'paragrafo_identificados.txt' com links de pesquisa do Google
-    def IdentificarESalvarParagrafos(self, conteudo):
+    def IdentificarESalvarParagrafos(self, conteudo, numLinks):
         # Utilize uma expressão regular para dividir o conteúdo em parágrafos
         # paragrafos = re.split(r'(?<=[.!?])\s+', conteudo)
 
@@ -56,6 +58,8 @@ class FileUI:
                     sentencas.append(current_sentence.strip())
                     current_sentence = ''
 
+
+        # permito só paragrafo
         paragrafos = [sentence for sentence in sentencas if any(sentence.endswith(delimitador) for delimitador in delimitadores_sentecas)]
 
 
@@ -75,13 +79,14 @@ class FileUI:
                     arquivo.write(paragrafo + "\n\n")
 
                     # Realize a pesquisa no Google e salve os links de retorno
-                    links = []
-                    for resultado in search(paragrafo, num=5, stop=5, pause=2):
-                        links.append(resultado)
+                    # links = []
+                    # for resultado in search(paragrafo, num=5, stop=5, pause=2):
+                    #     links.append(resultado)
                     arquivo.write("\nLinks de pesquisa do Google:\n")
-                    arquivo.write("\n".join(links) + "\n\n")
+                    arquivo.write("\n".join(self.LinksSimilar(paragrafo, numLinks)) + "\n\n")
 
                     paragrafos_existentes.add(paragrafo)
+
 
     # Função para carregar o conteúdo do arquivo 'monitoramento.txt' na área de texto
     def CarregarConteudo(self):
@@ -91,6 +96,7 @@ class FileUI:
         except FileNotFoundError:
             return ""
 
+
     # Função para carregar o conteúdo do arquivo 'paragrafo_identificados.txt' na segunda área de texto
     def CarregarParagrafosIdentificados(self):
         try:
@@ -99,10 +105,12 @@ class FileUI:
         except FileNotFoundError:
             return ""
 
+
     # Função para criar 'paragrafo_identificados.txt' se ele não existir
     def CriarParagrafoIdentificados(self):
         if not os.path.exists(self.fileParagrafos):
             open(self.fileParagrafos, "a").close()
+
 
     # Função para salvar o conteúdo em PDF com formatação
     def SalvarPDF(self):

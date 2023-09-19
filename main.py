@@ -1,10 +1,9 @@
-import os
-from app.loop import Loop
+# import os
+# from app.loop import Loop
 from app.telaUI import TelaUI
 
 
 if __name__ == "__main__":
-
 
     #Sem tela
     # dir  = 'file_text_test'
@@ -16,8 +15,6 @@ if __name__ == "__main__":
     # time     = 10
     # loop = Loop(fileInput, fileMonitoring, fileReportTXT, fileSavedParagraphs, time)
     # loop.mainLoop()
-
-
 
     #Com tela
     tela = TelaUI()
