@@ -12,13 +12,14 @@ class TelaUI(fileUI.FileUI, similar.Similar):
         super().__init__()
 
         # quantidade de links na consulta do google search
-        self.quantLinks = 4
+        self.quantLinks   = 4
+        self.statusResult = True 
 
         sg.theme('LightGreen')
         sg.set_options(element_padding=(0, 0))
 
         menu = [
-            # ['&Configurações', ['Manual de usabilidade da ferramenta']],
+
             ['&File', [
                        '&Salvar o conteúdo', 
                        '&Relatório PDF',
@@ -27,6 +28,7 @@ class TelaUI(fileUI.FileUI, similar.Similar):
                        ]
             ],
             ['&Ajudas', ['&Manual de usabilidade da ferramenta']]
+
         ]
 
         #criação do layout
@@ -54,6 +56,7 @@ class TelaUI(fileUI.FileUI, similar.Similar):
             [sg.Multiline(size=(40, 10), key="-RESULTADO-", expand_x=True, expand_y=True, disabled=True, default_text= self.CarregarParagrafosIdentificados())],
             [sg.Text("", size=(40, 1))],  # Margem superior entre a Multiline e o botão "Relatório PDF"
             [
+                sg.Button("Status Paragrafos e Links: Ativo", font=('Helvetica', 12, 'bold'), key='-StusResultado-'), 
                 sg.Button("+ links", font=('Helvetica', 12, 'bold'), key='-INCREMENTELINKS-'),
                 sg.Button("- links", font=('Helvetica', 12, 'bold'), key='-DECREMENTELINKS-'),
                 sg.Button("Relatório PDF", font=('Helvetica', 12, 'bold')), 
@@ -81,28 +84,33 @@ class TelaUI(fileUI.FileUI, similar.Similar):
     def SalvaAutomaticamente(self):
 
         while True:
+
             time.sleep(15)
             conteudo = self.window["-EDITAR-"].get()
             self.SalvarConteudo(conteudo)
             self.IdentificarESalvarParagrafos(conteudo, self.quantLinks)
-            conteudo_paragrafo = self.CarregarParagrafosIdentificados()
-            self.window["-RESULTADO-"].update(conteudo_paragrafo)
+            if self.statusResult == True:
+                conteudo_paragrafo = self.CarregarParagrafosIdentificados()
+                self.window["-RESULTADO-"].update(conteudo_paragrafo)
 
 
     # Função para exibir a caixa de diálogo de ajuda
     def AjudassMenu(self):
+        
         sg.popup("Aqui estão as instruções de ajuda:",
                 "1. Area de Editar: Onde será editado o texto que sera consultado a semeliaridade no google search.",
                 "2. Botão Salvar o conteúdo: Salva o contúdo da area de Editar",
                 "3. Botão Exportar .doc: exporta docx do conteúdo da area de edição",
-                "4. Os botões '+ links' e '- links' para ajustar a quantidade de links.",
+                "4. Os botões '+ links' e '- links' para ajustar a quantidade de links. Max: 10, Min 3",
                 "5. Botão 'Relatório PDF' exporta um relatório do conteúdo da area Paragrafos, Links no formato PDF.",
                 "6. Botão 'Sair X' para fechar o programa.",
                 title="Instruções de Ajuda")
 
+
     def LoopUI(self):
 
         while True:
+
             event, values = self.window.read()
 
             if event in (sg.WIN_CLOSED, "Sair X"):
@@ -115,6 +123,14 @@ class TelaUI(fileUI.FileUI, similar.Similar):
                 conteudo_paragrafos = self.CarregarParagrafosIdentificados()
                 self.window["-RESULTADO-"].update(conteudo_paragrafos)
                 sg.popup("Conteúdo salvo com sucesso!")
+            
+            elif event == "-StusResultado-":
+                if self.statusResult == True:
+                    self.statusResult = False
+                    self.window['-StusResultado-'].update('Status Paragrafos e Links: Desativo')
+                else:
+                    self.statusResult = True
+                    self.window['-StusResultado-'].update(f'Status Paragrafos e Links: Ativo')
 
             elif event == "-INCREMENTELINKS-" and self.quantLinks < 10:
                 self.quantLinks += 1
@@ -130,7 +146,6 @@ class TelaUI(fileUI.FileUI, similar.Similar):
 
             elif event == "Manual de usabilidade da ferramenta":
                 self.AjudassMenu()
-
 
             elif event == "Exportar .doc":
                 conteudo = values["-EDITAR-"]
