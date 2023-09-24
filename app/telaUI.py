@@ -98,13 +98,15 @@ class TelaUI(fileUI.FileUI, similar.Similar):
     def AjudassMenu(self):
         
         sg.popup("Aqui estão as instruções de ajuda:",
-                "1. Area de Editar: Onde será editado o texto que sera consultado a semeliaridade no google search.",
+                "1. Area de Editar: Area de editar o texto que será consultado a semeliaridade de textos no google search.",
                 "2. Botão Salvar o conteúdo: Salva o contúdo da area de Editar",
                 "3. Botão Exportar .doc: exporta docx do conteúdo da area de edição",
                 "4. Os botões '+ links' e '- links' para ajustar a quantidade de links. Max: 10, Min 3",
                 "5. Botão 'Relatório PDF' exporta um relatório do conteúdo da area Paragrafos, Links no formato PDF.",
                 "6. Botão 'Sair X' para fechar o programa.",
-                title="Instruções de Ajuda")
+                "7. Botão 'Status Paragrafos e Links' ativa e desativa a consulta dos paragrafos consultado no google search.",
+                title="Instruções de Ajuda"
+                )
 
 
     def LoopUI(self):
