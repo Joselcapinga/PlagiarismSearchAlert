@@ -1,11 +1,11 @@
 import PySimpleGUI as sg
 import threading
 import time
-import app.fileUI as fileUI
+import app.file as file
 import app.similar as similar
 
 
-class TelaUI(fileUI.FileUI, similar.Similar):
+class TelaUI(file.File, similar.Similar):
 
     def __init__(self):
               

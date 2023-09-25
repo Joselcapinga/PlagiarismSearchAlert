@@ -5,7 +5,7 @@ Links de pesquisa do Google:
 https://en.wikipedia.org/wiki/Lorem_ipsum
 https://en.wikipedia.org/wiki/De_finibus_bonorum_et_malorum
 https://en.wikipedia.org/wiki/Greeking
-https://en.wikipedia.org/wiki/Etaoin_shrdlu
+https://en.wikipedia.org/wiki/Asemic_writing
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 
@@ -23,34 +23,34 @@ Links de pesquisa do Google:
 https://www.lipsum.com/
 https://www12.senado.leg.br/institucional/melhorias/ed-superior-1/pastacursos-pos-graduacao/cursos-em-andamento/lorem-ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry
 https://www.fkm.ui.ac.id/lorem-ipsum/
-https://www.farmapotheka.com.br/testando-1-what-is-lorem-ipsum-what-is-2-2-2-2/
+https://www.tarea.com.br/2022/07/05/lorem-ipsum/
 
 It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
 
 
 Links de pesquisa do Google:
 https://www.currentconservation.org/it-has-survived-not-only-five-centuries-but-also-the-leap-into-electronic-typesetting/
+https://fcmsantacasasp.edu.br/vemprasanta/noticia/including-of-lorem-ipsum-it-has-survived-not-only-five-centuries/
 https://tribuna1.com.br/it-has-survived-not-only-five-centuries-but-also-the-leap-into-electronic-typesetting-remaining-essentially-unchanged/
-https://fegikinvestimentos.com.br/blog/what-is-lorem-ipsum/
-https://www.farmapotheka.com.br/testando-1-what-is-lorem-ipsum-what-is-2/
+https://piranhas150.piranhas.al.gov.br/lorem-ipsum-has-been-the-industrys-standard-dummy-text-ever-the-printing/
 
 It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
 
 Links de pesquisa do Google:
+https://fcmsantacasasp.edu.br/vemprasanta/noticia/including-of-lorem-ipsum-it-has-survived-not-only-five-centuries/
 https://apalma.com.br/2022/03/08/afinal-o-que-e-branding-e-como-ele-e-importante-post-4-teste/
 https://www.lipsum.com/
-http://www.pm.ba.gov.br/fake-news/
-https://fegikinvestimentos.com.br/blog/what-is-lorem-ipsum/
+http://portaleducacao.guarulhos.sp.gov.br/wp_site/blog/2022/03/25/teste-de-informacao-de-post/
 
 Há uma necessidade clara de desenvolver e disponibilizar uma ferramenta que ajude a comunidade acadêmica a elaborar textos de forma mais eficaz e precisa, evitando plágio e erros acidentais.
 
 
 Links de pesquisa do Google:
-https://www2.ufjf.br/noticias/2017/05/04/saiba-como-evitar-o-plagio-em-trabalhos-academicos/
 https://www.ufpb.br/ufpb/contents/noticias/biblioteca-da-ufpb-indica-ferramentas-digitais-para-detectar-plagio
-https://biblioteca.furg.br/pt/ferramentas/softwares-para-deteccao-de-similaridade-e-de-plagio
-https://repositorio.ufscar.br/bitstream/handle/ufscar/11917/DissertacaoThaisAPARECIDAdeLimaPPGCI2019.pdf?sequence=1&isAllowed=y
+http://www.ccen.ufpb.br/bsccen/contents/noticias/conheca-algumas-ferramentas-para-detectar-plagio-em-textos-e-documentos
+https://www.univates.br/editora-univates/media/publicacoes/315/pdf_315.pdf
+http://bdtd.uftm.edu.br/bitstream/123456789/1320/1/Dissert%20Alessandra%20Oliveira.pdf
 
 As técnicas de detecção de plágio baseadas em conteúdo são amplamente usadas para identificar similaridade entre textos.
 
@@ -59,15 +59,15 @@ Links de pesquisa do Google:
 https://biblioteca.furg.br/pt/ferramentas/softwares-para-deteccao-de-similaridade-e-de-plagio
 https://sat.ufba.br/sites/sat.ufba.br/files/programas_para_deteccao_de_plagio_texto_para_ppgsat_1.docx
 http://repositorio.ufla.br/bitstream/1/30645/2/MONOGRAFIA_Analise_de_tecnicas_e_ferramentas_de_deteccao_de_plagio_e_desenvolvimento_de_um_prototipo_de_nova_ferramenta.pdf
-https://pt.wikipedia.org/wiki/Detec%C3%A7%C3%A3o_de_similaridade_de_conte%C3%BAdo
+http://www.ccen.ufpb.br/bsccen/contents/noticias/conheca-algumas-ferramentas-para-detectar-plagio-em-textos-e-documentos
 
 Ao contrário das ferramentas existentes, que processam o texto após sua elaboração, a ferramenta proposta realizará o processamento em tempo real, alertando o autor sobre os resultados enquanto o texto é escrito.
 
 
 Links de pesquisa do Google:
 https://www.uniasselvi.com.br/extranet/layout/request/trilha/materiais/livro/livro.php?codigo=22393
-https://www.teses.usp.br/teses/disponiveis/18/18149/tde-09012009-210323/publico/DissertacaoArocaMestrado2008.pdf
 https://www.ufrgs.br/cursopgdr/downloadsSerie/derad005.pdf
+https://www.teses.usp.br/teses/disponiveis/18/18149/tde-09012009-210323/publico/DissertacaoArocaMestrado2008.pdf
 https://repositoriodev.ufba.br/bitstream/ri/5190/1/O%20processo%20de%20aprendizagem-repositorio2.pdf
 
 Isso promoverá a integridade acadêmica e servirá como um recurso educacional para estudantes, professores e pesquisadores, ajudando-os a compreender a importância da originalidade e desenvolver habilidades de escrita desde o início.
@@ -85,7 +85,7 @@ Com essa ferramenta, os alunos, professores e pesquisadores poderão receber fee
 Links de pesquisa do Google:
 https://www.turnitin.com/pt/produtos/funcoes/draft-coach/recursos
 https://www.turnitin.com/pt/produtos/funcoes/draft-coach
-https://www.em.com.br/app/noticia/educacao/2023/02/14/internas_educacao,1457235/escolas-adotam-inteligencia-artificial-para-ajudar-aluno-a-escrever-redacao.shtml
+https://www.cps.sp.gov.br/professora-de-etec-desenvolve-ferramenta-de-ia-para-correcao-de-redacoes/
 https://www.uniasselvi.com.br/extranet/layout/request/trilha/materiais/livro/livro.php?codigo=22259
 
 Além de prevenir plágio, ela incentivará a adoção de boas práticas acadêmicas e a busca constante para melhoria na qualidade dos trabalhos.
@@ -103,7 +103,7 @@ A ferramenta proposta será uma contribuição valiosa para a comunidade acadêm
 Links de pesquisa do Google:
 https://www.uniasselvi.com.br/extranet/layout/request/trilha/materiais/gabarito/gabarito.php?codigo=35707
 https://repositorio.ufsc.br/bitstream/handle/123456789/83805/188852.pdf?sequence=1
-https://www.ifsc.edu.br/web/ifsc-verifica/w/quais-os-impactos-do-chatgpt-e-da-inteligencia-artificial-na-educacao-
+https://unilab.edu.br/wp-content/uploads/2022/12/Manual-de-Integridade-Publica-da-OCDE-1.pdf
 http://portal.mec.gov.br/index.php?option=com_docman&view=download&alias=79611-anexo-texto-bncc-aprovado-em-15-12-17-pdf&category_slug=dezembro-2017-pdf&Itemid=30192
 
 Claudio Mario.
@@ -138,7 +138,7 @@ Ana campos.
 
 Links de pesquisa do Google:
 https://www.instagram.com/anacampos_/?hl=en
-https://br.linkedin.com/in/anacamposgrounds
+https://br.linkedin.com/in/ana-campos-consultoria
 https://br.linkedin.com/in/anacamposdecarvalho?trk=pub-pbmap
 https://pt-br.facebook.com/public/Ana-Campos
 
@@ -158,7 +158,7 @@ Links de pesquisa do Google:
 https://www.univali.br/graduacao/direito-itajai/publicacoes/revista-de-iniciacao-cientifica-ricc/edicoes/Lists/Artigos/Attachments/954/Arquivo%2026.pdf
 http://www.dominiopublico.gov.br/download/teste/arqs/cp067933.pdf
 https://www.pontotel.com.br/assedio-no-trabalho/
-https://periodicos.uni7.edu.br/index.php/iniciacao-cientifica/article/download/412/414/
+https://monografias.brasilescola.uol.com.br/direito/assedio-moral-no-ambiente-de-trabalho.htm
 
 A comunidade acadêmica pode ser prejudicada pela descredibilização pública e restrição de oportunidades de pesquisa.
 
@@ -167,7 +167,7 @@ Links de pesquisa do Google:
 https://www.scielo.br/j/ensaio/a/5tRrvbJmZSnzLgvLtCF78kR/?format=pdf&lang=pt
 https://www12.senado.leg.br/noticias/infomaterias/2020/09/corte-de-verbas-da-ciencia-prejudica-reacao-a-pandemia-e-desenvolvimento-do-pais
 https://repository.ufrpe.br/bitstream/123456789/4060/1/tcc_cleitonjosedemeloferreira.pdf
-https://www.brasildefato.com.br/2021/11/12/analise-a-crise-da-ciencia-e-pesquisa-no-brasil-e-um-projeto-os-impactos-das-restricoes
+https://www.ie.ufrj.br/images/IE/PPED/Teses/2022/Tese_Giuliano%20Magno%20de%20Oliveira%20Cond%C3%A9_PPED_FINAL1.pdf
 
 O plágio compromete a credibilidade das atividades acadêmicas, prejudicando a aprendizagem dos estudantes e desvaloriza os títulos acadêmicos.
 
@@ -191,10 +191,10 @@ As consequências são prejudiciais, afetando tanto a reputação acadêmica qua
 
 
 Links de pesquisa do Google:
+https://blog.plagium.com.br/2023/02/27/as-consequencias-do-plagio-e-como-ele-pode-afetar-a-reputacao-e-carreira-de-uma-pessoa/
+https://www.scielo.br/j/ss/a/kkdzGC8LcbcZQD5RGqLHW9y/?lang=pt
 https://repositorio.animaeducacao.com.br/bitstream/ANIMA/14051/1/TCC%20FINAL%203.pdf
 https://www.pucsp.br/sites/default/files/download/graduacao/cursos/administracao/Gestao-de-Pessoas-no-Seculo-XXI.pdf
-https://blog.even3.com.br/plagio-academico/
-https://brapci.inf.br/index.php/res/download/112452
 
 É fundamental que as universidades ofereçam suporte adequado aos estudantes para que desenvolvam suas habilidades de escrita e pesquisa,  ao fornecer orientação e recursos para aprimorar a capacidade de escrita dos alunos, podemos ajudá-los a evitar o plágio.
 
@@ -202,8 +202,8 @@ https://brapci.inf.br/index.php/res/download/112452
 Links de pesquisa do Google:
 http://portal.mec.gov.br/index.php?option=com_docman&view=download&alias=79611-anexo-texto-bncc-aprovado-em-15-12-17-pdf&category_slug=dezembro-2017-pdf&Itemid=30192
 http://portal.mec.gov.br/index.php?option=com_docman&task=doc_download&gid=4034&Itemid
-https://www.uniasselvi.com.br/extranet/layout/request/trilha/materiais/gabarito/gabarito.php?codigo=25612
 https://www.scielo.br/j/rbee/a/F5g6rWB3wTZwyBN4LpLgv5C/
+https://www.uniasselvi.com.br/extranet/layout/request/trilha/materiais/gabarito/gabarito.php?codigo=25612
 
 Para enfrentar essa questão, é imperativo conscientizar os estudantes sobre os princípios éticos de citação e a importância da integridade acadêmica.
 
@@ -212,15 +212,15 @@ Links de pesquisa do Google:
 https://www.fclar.unesp.br/Home/Biblioteca/tdc-o-que-e-integridade-academica.pdf
 https://www.turnitin.com/pt/blog/o-que-e-fraude-academica-integridade
 http://portal.mec.gov.br/index.php?option=com_docman&view=download&alias=79611-anexo-texto-bncc-aprovado-em-15-12-17-pdf&category_slug=dezembro-2017-pdf&Itemid=30192
-https://brapci.inf.br/index.php/res/v/220110
+https://repositorio.ufmg.br/bitstream/1843/BUBD-B9DQTX/1/disserta__o_zelia_vers_o_final.pdf
 
 Além disso, é crucial implementar medidas para detectar e prevenir o plágio, como uso de ferramentas  especializadas que identificam trechos copiados de outras fontes.
 
 
 Links de pesquisa do Google:
+http://www.ccen.ufpb.br/bsccen/contents/noticias/conheca-algumas-ferramentas-para-detectar-plagio-em-textos-e-documentos
 https://www2.ufjf.br/noticias/2017/05/04/saiba-como-evitar-o-plagio-em-trabalhos-academicos/
 https://www.ufpb.br/ufpb/contents/noticias/biblioteca-da-ufpb-indica-ferramentas-digitais-para-detectar-plagio
-https://biblioteca.furg.br/pt/ferramentas/softwares-para-deteccao-de-similaridade-e-de-plagio
 https://www.ufrgs.br/bibeng/plagio-academico-o-que-e-como-evitar/
 
 Essas ferramentas podem auxiliar na detecção de plágio, contribuindo para a manutenção da originalidade do trabalho acadêmico.
@@ -228,7 +228,7 @@ Essas ferramentas podem auxiliar na detecção de plágio, contribuindo para a m
 
 Links de pesquisa do Google:
 https://www.ufpb.br/bsmamanguape/contents/noticias/quais-as-ferramentas-para-detectar-plagio-nos-trabalhos-academicos
-https://biblioteca.furg.br/pt/ferramentas/softwares-para-deteccao-de-similaridade-e-de-plagio
 http://www.ccen.ufpb.br/bsccen/contents/noticias/conheca-algumas-ferramentas-para-detectar-plagio-em-textos-e-documentos
+https://biblioteca.furg.br/pt/ferramentas/softwares-para-deteccao-de-similaridade-e-de-plagio
 https://biblio.direito.ufmg.br/?p=3577
 
