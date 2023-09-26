@@ -11,24 +11,16 @@ class ScreenUI(file.File, similar.Similar):
               
         super().__init__()
 
-        # quantidade de links na consulta do google search
-        self.quantLinks   = 4
-        self.statusResult = True 
+        self.quantLinks     = 4 
+        self.statusResult   = True 
+        self.tempoChecagem  = 20    
 
         sg.theme('LightGreen')
         sg.set_options(element_padding=(0, 0))
 
         menu = [
-
-            ['&File', [
-                       '&Salvar o conteúdo', 
-                       '&Relatório PDF',
-                       '&Exportar .doc', 
-                       '&Sair X', 
-                       ]
-            ],
+            ['&File', ['&Salvar o conteúdo', '&Relatório PDF','&Exportar .doc', '&Sair X']],
             ['&Ajudas', ['&Manual de usabilidade da ferramenta']]
-
         ]
 
         #criação do layout
@@ -52,6 +44,7 @@ class ScreenUI(file.File, similar.Similar):
             ],
             [
                 
+                # encontrei mais textos similiares, verifica os links na area de resultados. Colocar em cor vermelha ao lado da quantidade de links atuais
             ],
             [sg.Multiline(size=(40, 10), key="-RESULTADO-", expand_x=True, expand_y=True, disabled=True, default_text= self.CarregarParagrafosIdentificados())],
             [sg.Text("", size=(40, 1))],  # Margem superior entre a Multiline e o botão "Relatório PDF"
@@ -85,7 +78,7 @@ class ScreenUI(file.File, similar.Similar):
 
         while True:
 
-            time.sleep(15)
+            time.sleep(self.tempoChecagem)
             conteudo = self.window["-EDITAR-"].get()
             self.SalvarConteudo(conteudo)
             self.IdentificarESalvarParagrafos(conteudo, self.quantLinks)
