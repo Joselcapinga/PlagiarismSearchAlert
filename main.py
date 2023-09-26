@@ -1,7 +1,7 @@
-from app.telaUI import TelaUI
+from app.screenUI import ScreenUI
 
 if __name__ == "__main__":
 
-    tela = TelaUI()
+    tela = ScreenUI()
 
             

@@ -5,7 +5,7 @@ import app.file as file
 import app.similar as similar
 
 
-class TelaUI(file.File, similar.Similar):
+class ScreenUI(file.File, similar.Similar):
 
     def __init__(self):
               
