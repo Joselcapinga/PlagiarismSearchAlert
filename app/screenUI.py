@@ -27,7 +27,7 @@ class ScreenUI(file.File, similar.Similar):
         layout = [
             [sg.Menu(menu, tearoff=True, font=('Helvetica', 12), key='-MENUBAR-')],
             [sg.Text("Area de Editar", size=(40, 1), justification='center', font=('Helvetica', 12, 'bold'))],
-            [sg.Multiline(size=(40, 10), key="-EDITAR-", expand_x=True, expand_y=True, default_text= self.CarregarConteudo())],
+            [sg.Multiline(size=(40, 10), key="-EDITAR-", expand_x=True, expand_y=True, default_text= self.CarregarConteudo(1))],
             [sg.Text("", size=(40, 1))],
             [
                 sg.Button("Salvar o conteúdo", font=('Helvetica', 12, 'bold')),
@@ -46,7 +46,7 @@ class ScreenUI(file.File, similar.Similar):
                 
                 # encontrei mais textos similiares, verifica os links na area de resultados. Colocar em cor vermelha ao lado da quantidade de links atuais
             ],
-            [sg.Multiline(size=(40, 10), key="-RESULTADO-", expand_x=True, expand_y=True, disabled=True, default_text= self.CarregarParagrafosIdentificados())],
+            [sg.Multiline(size=(40, 10), key="-RESULTADO-", expand_x=True, expand_y=True, disabled=True, default_text= self.CarregarConteudo(2))],
             [sg.Text("", size=(40, 1))],  # Margem superior entre a Multiline e o botão "Relatório PDF"
             [
                 sg.Button("Status Paragrafos e Links: Ativo", font=('Helvetica', 12, 'bold'), key='-StusResultado-'), 
@@ -83,7 +83,7 @@ class ScreenUI(file.File, similar.Similar):
             self.SalvarConteudo(conteudo)
             self.IdentificarESalvarParagrafos(conteudo, self.quantLinks)
             if self.statusResult == True:
-                conteudo_paragrafo = self.CarregarParagrafosIdentificados()
+                conteudo_paragrafo = self.CarregarConteudo(2)
                 self.window["-RESULTADO-"].update(conteudo_paragrafo)
 
 
@@ -115,7 +115,7 @@ class ScreenUI(file.File, similar.Similar):
                 conteudo = values["-EDITAR-"]
                 self.SalvarConteudo(conteudo)
                 self.IdentificarESalvarParagrafos(conteudo, self.quantLinks)
-                conteudo_paragrafos = self.CarregarParagrafosIdentificados()
+                conteudo_paragrafos = self.CarregarConteudo(2)
                 self.window["-RESULTADO-"].update(conteudo_paragrafos)
                 sg.popup("Conteúdo salvo com sucesso!")
             

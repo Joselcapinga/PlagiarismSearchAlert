@@ -40,11 +40,21 @@ class File:
             with open(self.fileMonitoramento, "w") as arquivo:
                 arquivo.write(conteudo)
 
+    # Função para carregar o conteúdo do arquivo 'monitoramento.txt' na área de texto
+    def CarregarConteudo(self, opc):
+        try:
+            if opc == 1:
+                with open(self.fileMonitoramento, "r") as arquivo:
+                    return arquivo.read()
+            elif opc == 2:
+                 with open(self.fileParagrafos, "r") as arquivo:
+                    return arquivo.read()
+
+        except FileNotFoundError:
+            return ""
 
     # Função para identificar e salvar parágrafos em 'paragrafo_identificados.txt' com links de pesquisa do Google
     def IdentificarESalvarParagrafos(self, conteudo, numLinks):
-        # Utilize uma expressão regular para dividir o conteúdo em parágrafos
-        # paragrafos = re.split(r'(?<=[.!?])\s+', conteudo)
 
         delimitadores_sentecas = ['.', '!', '?']
         sentencas = []
@@ -57,14 +67,8 @@ class File:
                     sentencas.append(current_sentence.strip())
                     current_sentence = ''
 
-
         # permito só paragrafo
         paragrafos = [sentence for sentence in sentencas if any(sentence.endswith(delimitador) for delimitador in delimitadores_sentecas)]
-
-
-        # Crie o arquivo 'paragrafo_identificados.txt' se ele não existir
-        if not os.path.exists(self.fileParagrafos):
-            open(self.fileParagrafos, "a").close()
 
         # Verifique se o parágrafo não existe antes de salvar em 'paragrafo_identificados.txt'
         paragrafos_existentes = set()
@@ -76,51 +80,21 @@ class File:
             for paragrafo in paragrafos:
                 if paragrafo not in paragrafos_existentes:
                     arquivo.write(paragrafo + "\n\n")
-
-                    # Realize a pesquisa no Google e salve os links de retorno
-                    # links = []
-                    # for resultado in search(paragrafo, num=5, stop=5, pause=2):
-                    #     links.append(resultado)
                     arquivo.write("\nLinks de pesquisa do Google:\n")
                     arquivo.write("\n".join(self.LinksSimilar(paragrafo, numLinks)) + "\n\n")
 
                     paragrafos_existentes.add(paragrafo)
 
 
-    # Função para carregar o conteúdo do arquivo 'monitoramento.txt' na área de texto
-    def CarregarConteudo(self):
-        try:
-            with open(self.fileMonitoramento, "r") as arquivo:
-                return arquivo.read()
-        except FileNotFoundError:
-            return ""
-
-
-    # Função para carregar o conteúdo do arquivo 'paragrafo_identificados.txt' na segunda área de texto
-    def CarregarParagrafosIdentificados(self):
-        try:
-            with open(self.fileParagrafos, "r") as arquivo:
-                return arquivo.read()
-        except FileNotFoundError:
-            return ""
-
-
-    # Função para criar 'paragrafo_identificados.txt' se ele não existir
-    def CriarParagrafoIdentificados(self):
-        if not os.path.exists(self.fileParagrafos):
-            open(self.fileParagrafos, "a").close()
-
 
     # Função para salvar o conteúdo em PDF com formatação
     def SalvarPDF(self):
         try:
             conteudo_paragrafos = self.CarregarParagrafosIdentificados()
-
             if conteudo_paragrafos:
                 # Crie um arquivo PDF com o conteúdo formatado
                 doc = SimpleDocTemplate(self.relatorioPDF, pagesize=letter)
                 styles = getSampleStyleSheet()
-
                 # Crie um Paragraph personalizado com alinhamento centralizado
                 cabecalho = Paragraph("<center>Relatório</center>", styles["Heading1"])
                 conteudo = [cabecalho]
@@ -131,21 +105,19 @@ class File:
                     p = Paragraph(paragrafo, styles["Normal"])
                     conteudo.append(p)
                     conteudo.append(Spacer(1, 12))  # Espaço entre os parágrafos
-
                 # Construa o arquivo PDF
                 doc.build(conteudo)
-                return 1
+                return True
         except:
-            return 0
+            return False
 
     def SalvarDoc(self, conteudo):
-        
         try:
             doc = docx.Document()
             doc.add_paragraph(conteudo)
             doc.save('document_exportado.docx')
-            return 1
+            return True
         except:
-            return 0
+            return False
 
 
