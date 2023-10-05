@@ -86,7 +86,6 @@ class File:
                     paragrafos_existentes.add(paragrafo)
 
 
-
     # Função para salvar o conteúdo em PDF com formatação
     def SalvarPDF(self):
         try:
@@ -110,6 +109,7 @@ class File:
                 return True
         except:
             return False
+
 
     def SalvarDoc(self, conteudo):
         try:
