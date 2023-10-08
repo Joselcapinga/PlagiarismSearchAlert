@@ -1,0 +1,72 @@
+What is Lorem Ipsum?
+
+Links de pesquisa do Google:
+https://www.lipsum.com/
+Porcentagem de semelhança: 0.02%
+https://en.wikipedia.org/wiki/Lorem_ipsum
+Porcentagem de semelhança: 0.00%
+https://en.wikipedia.org/wiki/De_finibus_bonorum_et_malorum
+Porcentagem de semelhança: 0.00%
+https://en.wikipedia.org/wiki/Greeking
+Porcentagem de semelhança: 0.00%
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+
+Links de pesquisa do Google:
+https://www.lipsum.com/
+Porcentagem de semelhança: 0.09%
+https://www12.senado.leg.br/institucional/melhorias/ed-superior-1/pastacursos-pos-graduacao/cursos-em-andamento/lorem-ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry
+Porcentagem de semelhança: 0.02%
+https://www.fkm.ui.ac.id/lorem-ipsum/
+Porcentagem de semelhança: 0.01%
+https://www.raag.com.br/empreendedorismo/lorem-ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry
+Porcentagem de semelhança: 0.60%
+
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+Links de pesquisa do Google:
+https://www.lipsum.com/
+Porcentagem de semelhança: 1.72%
+https://www12.senado.leg.br/institucional/melhorias/ed-superior-1/pastacursos-pos-graduacao/cursos-em-andamento/lorem-ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry
+Porcentagem de semelhança: 0.48%
+https://www.fkm.ui.ac.id/lorem-ipsum/
+Porcentagem de semelhança: 0.12%
+https://www.farmapotheka.com.br/testando-1-what-is-lorem-ipsum-what-is-2-2/
+Porcentagem de semelhança: 0.05%
+
+It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+
+Links de pesquisa do Google:
+https://www.currentconservation.org/it-has-survived-not-only-five-centuries-but-also-the-leap-into-electronic-typesetting/
+Porcentagem de semelhança: 19.77%
+https://tribuna1.com.br/it-has-survived-not-only-five-centuries-but-also-the-leap-into-electronic-typesetting-remaining-essentially-unchanged/
+Porcentagem de semelhança: 0.14%
+https://fcmsantacasasp.edu.br/vemprasanta/noticia/including-of-lorem-ipsum-it-has-survived-not-only-five-centuries/
+Porcentagem de semelhança: 0.03%
+https://www.sankhya.com.br/imprensa/lorem-ipsum-5-is-simply-dummytextof-the-printing-and-typesetting-copy-copia-copia-copia/
+Porcentagem de semelhança: 0.01%
+
+It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+Links de pesquisa do Google:
+https://apalma.com.br/2022/03/08/afinal-o-que-e-branding-e-como-ele-e-importante-post-4-teste/
+Porcentagem de semelhança: 0.89%
+https://fcmsantacasasp.edu.br/vemprasanta/noticia/including-of-lorem-ipsum-it-has-survived-not-only-five-centuries/
+Porcentagem de semelhança: 0.72%
+https://www.lipsum.com/
+Porcentagem de semelhança: 2.09%
+https://www.farmapotheka.com.br/testando-1-what-is-lorem-ipsum-what-is-2/
+Porcentagem de semelhança: 0.20%
+
+Ela é construída sobre sistemas de controle de versão Git que possuem uma gama de funções para gerenciar o controle de versionamento.
+
+Links de pesquisa do Google:
+https://www.hostgator.com.br/blog/git-o-sistema-de-controle/
+Porcentagem de semelhança: 0.01%
+https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Sobre-Controle-de-Vers%C3%A3o
+Porcentagem de semelhança: 0.18%
+https://www.devmedia.com.br/sistemas-de-controle-de-versao/24574
+Porcentagem de semelhança: 0.05%
+https://repositorio.animaeducacao.com.br/bitstream/ANIMA/11147/1/TCC_Guilherme_Francisco.pdf
+Porcentagem de semelhança: 0.00%
+

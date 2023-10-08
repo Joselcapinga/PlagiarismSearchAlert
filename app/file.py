@@ -80,9 +80,8 @@ class File:
             for paragrafo in paragrafos:
                 if paragrafo not in paragrafos_existentes:
                     arquivo.write(paragrafo + "\n\n")
-                    arquivo.write("\nLinks de pesquisa do Google:\n")
+                    arquivo.write("Links de pesquisa do Google:\n")
                     arquivo.write("\n".join(self.LinksSimilar(paragrafo, numLinks)) + "\n\n")
-
                     paragrafos_existentes.add(paragrafo)
 
 
