@@ -17,6 +17,7 @@ class File:
         self.fileMonitoramento = os.path.join(dir,"monitoramento.txt")
         self.fileParagrafos    = os.path.join(dir,"paragrafo_identificados.txt")
         self.relatorioPDF      = os.path.join(dir,"relatorio.pdf")
+        
 
         self.CriarArquivos()
  
@@ -79,11 +80,13 @@ class File:
         with open(self.fileParagrafos, "a") as arquivo:
             for paragrafo in paragrafos:
                 if paragrafo not in paragrafos_existentes:
-                    arquivo.write(paragrafo + "\n\n")
+                    arquivo.write(paragrafo + "\n")
                     arquivo.write("Links de pesquisa do Google:\n")
-                    arquivo.write("\n".join(self.LinksSimilar(paragrafo, numLinks)) + "\n\n")
+                    result = self.LinksSimilar(paragrafo, numLinks)
+                    arquivo.write("\n".join(result) + "\n\n")
                     paragrafos_existentes.add(paragrafo)
-
+                    
+                    # print(self.LinksSimilar(paragrafo, numLinks))
 
     # Função para salvar o conteúdo em PDF com formatação
     def SalvarPDF(self):

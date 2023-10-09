@@ -1,45 +1,47 @@
 from googlesearch import search
 import requests
-import difflib
-import time
+import json
+
 
 class Similar():
 
 
-    # Função para calcular a porcentagem de semelhança entre duas strings
-    def similarity_percentage(self, query, content):
+    def CheckConteudoLink(self, link, query):
         
-        query = query.lower()
-        content = content.lower()
-        seq = difflib.SequenceMatcher(None, query, content)
-        return seq.ratio() * 100
-    
-    
-    # Itera pelos links e verifica a porcentagem de semelhança
-    def ConteudoSite(self, link, query):
+        try:
 
-        percentage = 0.0
+            data = {
+                'link':  link,
+                'query': query
+            }
+            
+            url = 'http://localhost:8080/processar_link'
+            headers = {'Content-Type': 'application/json'}
+            response = requests.post(url, data=json.dumps(data), headers=headers)
 
-        # try:
-        response = requests.get(link)
-        content = response.text
-        percentage = self.similarity_percentage(query, content)
-        # print(f"Link: {link}")
-        # print(f"Porcentagem de semelhança: {percentage:.2f}%")
-        # print("-" * 50) 
-        # except Exception as e:
-        return f"Porcentagem de semelhança: {percentage:.2f}%"
-        
-        # return percentage
+            if response.status_code != 200:
+                return []
+            
+            json_data = response.json()
+            mensagem = json_data.get('mensagem')    
 
-    # 
+            return mensagem
+
+        except:
+            return []
+
     def LinksSimilar(self, query, numLinks = 5):
         
         search_results = []
                 
-        for i in search(query, num= 10, stop= numLinks, pause= 2): 
-            percentual = self.ConteudoSite(i, query)
-            search_results.append(i)
-            search_results.append(percentual)
-        return search_results
+        for i in search(query, tld="co.in", num= 10, stop= numLinks, pause= 2): 
+           
+            # if self.CheckConteudoLink(i, query) == True:
+            #     search_results.append("Parágrafo encontrado no link abaixo")
+            #     search_results.append(i)
+                
+            # else:
+            #     search_results.append("Verifica o link abaixo com suposta similaridade: ")
+                search_results.append(i)
 
+        return search_results

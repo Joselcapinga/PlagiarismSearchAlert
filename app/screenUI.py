@@ -94,7 +94,7 @@ class ScreenUI(file.File, similar.Similar):
                 "1. Area de Editar: Area de editar o texto que será consultado a semeliaridade de textos no google search.",
                 "2. Botão Salvar o conteúdo: Salva o contúdo da area de Editar",
                 "3. Botão Exportar .doc: exporta docx do conteúdo da area de edição",
-                "4. Os botões '+ links' e '- links' para ajustar a quantidade de links. Max: 10, Min 3",
+                "4. Os botões '+ links' e '- links' para ajustar a quantidade de links. Min: 4, Max: 10",
                 "5. Botão 'Relatório PDF' exporta um relatório do conteúdo da area Paragrafos, Links no formato PDF.",
                 "6. Botão 'Sair X' para fechar o programa.",
                 "7. Botão 'Status Paragrafos e Links' ativa e desativa a consulta dos paragrafos consultado no google search.",
