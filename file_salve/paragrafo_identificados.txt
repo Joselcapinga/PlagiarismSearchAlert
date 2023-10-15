@@ -1,72 +1,91 @@
 What is Lorem Ipsum?
 
-Links de pesquisa do Google:
-https://www.lipsum.com/
-Porcentagem de semelhança: 0.02%
-https://en.wikipedia.org/wiki/Lorem_ipsum
-Porcentagem de semelhança: 0.00%
-https://en.wikipedia.org/wiki/De_finibus_bonorum_et_malorum
-Porcentagem de semelhança: 0.00%
-https://en.wikipedia.org/wiki/Greeking
-Porcentagem de semelhança: 0.00%
+O parágrafo não existe similaridade no banco de dados
+
+
+****************************************************************************************************
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 
-Links de pesquisa do Google:
-https://www.lipsum.com/
-Porcentagem de semelhança: 0.09%
-https://www12.senado.leg.br/institucional/melhorias/ed-superior-1/pastacursos-pos-graduacao/cursos-em-andamento/lorem-ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry
-Porcentagem de semelhança: 0.02%
-https://www.fkm.ui.ac.id/lorem-ipsum/
-Porcentagem de semelhança: 0.01%
-https://www.raag.com.br/empreendedorismo/lorem-ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry
-Porcentagem de semelhança: 0.60%
+O parágrafo não existe similaridade no banco de dados
+
+
+****************************************************************************************************
 
 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 
-Links de pesquisa do Google:
-https://www.lipsum.com/
-Porcentagem de semelhança: 1.72%
-https://www12.senado.leg.br/institucional/melhorias/ed-superior-1/pastacursos-pos-graduacao/cursos-em-andamento/lorem-ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry
-Porcentagem de semelhança: 0.48%
-https://www.fkm.ui.ac.id/lorem-ipsum/
-Porcentagem de semelhança: 0.12%
-https://www.farmapotheka.com.br/testando-1-what-is-lorem-ipsum-what-is-2-2/
-Porcentagem de semelhança: 0.05%
+O parágrafo não existe similaridade no banco de dados
+
+
+****************************************************************************************************
 
 It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
 
-Links de pesquisa do Google:
-https://www.currentconservation.org/it-has-survived-not-only-five-centuries-but-also-the-leap-into-electronic-typesetting/
-Porcentagem de semelhança: 19.77%
-https://tribuna1.com.br/it-has-survived-not-only-five-centuries-but-also-the-leap-into-electronic-typesetting-remaining-essentially-unchanged/
-Porcentagem de semelhança: 0.14%
-https://fcmsantacasasp.edu.br/vemprasanta/noticia/including-of-lorem-ipsum-it-has-survived-not-only-five-centuries/
-Porcentagem de semelhança: 0.03%
-https://www.sankhya.com.br/imprensa/lorem-ipsum-5-is-simply-dummytextof-the-printing-and-typesetting-copy-copia-copia-copia/
-Porcentagem de semelhança: 0.01%
+O parágrafo não existe similaridade no banco de dados
+
+
+****************************************************************************************************
 
 It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
-Links de pesquisa do Google:
-https://apalma.com.br/2022/03/08/afinal-o-que-e-branding-e-como-ele-e-importante-post-4-teste/
-Porcentagem de semelhança: 0.89%
-https://fcmsantacasasp.edu.br/vemprasanta/noticia/including-of-lorem-ipsum-it-has-survived-not-only-five-centuries/
-Porcentagem de semelhança: 0.72%
-https://www.lipsum.com/
-Porcentagem de semelhança: 2.09%
-https://www.farmapotheka.com.br/testando-1-what-is-lorem-ipsum-what-is-2/
-Porcentagem de semelhança: 0.20%
+O parágrafo não existe similaridade no banco de dados
+
+
+****************************************************************************************************
 
 Ela é construída sobre sistemas de controle de versão Git que possuem uma gama de funções para gerenciar o controle de versionamento.
 
-Links de pesquisa do Google:
-https://www.hostgator.com.br/blog/git-o-sistema-de-controle/
-Porcentagem de semelhança: 0.01%
-https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Sobre-Controle-de-Vers%C3%A3o
-Porcentagem de semelhança: 0.18%
-https://www.devmedia.com.br/sistemas-de-controle-de-versao/24574
-Porcentagem de semelhança: 0.05%
-https://repositorio.animaeducacao.com.br/bitstream/ANIMA/11147/1/TCC_Guilherme_Francisco.pdf
-Porcentagem de semelhança: 0.00%
+Similaridades encontradas no banco de dados: 
+
+sobre 
+Percentual de similaridade:  0.06
+****************************************************************************************************
+
+No construtor da classe, várias configurações iniciais são estabelecidas, como o tema da interface gráfica, o layout da janela e a inicialização de threads para a automação do salvamento e a atualização dos resultados.
+
+Similaridades encontradas no banco de dados: 
+
+resultados 
+Percentual de similaridade:  0.00
+****************************************************************************************************
+
+Isso permite a execução de funcionalidades no momento da instância da classe.
+
+Similaridades encontradas no banco de dados: 
+
+de no 
+Percentual de similaridade:  0.18
+****************************************************************************************************
+
+A pandemia de covid-19 foi assim classificada pela Organização Mundial da Saúde (OMS) no mês de março de 2020, três meses após a identificação do primeiro caso da doença na cidade de Wuhan, no sudeste da China.
+
+Similaridades encontradas no banco de dados: 
+
+a pandemia de covid-19 foi assim classificada pela organização mundial da saúde (oms) no mês de março de 2020, três meses após a identificação do primeiro caso da doença na cidade de wuhan, no sudeste da china 
+Percentual de similaridade:  0.65
+****************************************************************************************************
+
+Desde então, a covid-19, doença respiratória causada pelo vírus SARS-CoV-2, se fez presente em dezenas de países e contaminou mais de 655 milhões de pessoas, com o maior número de casos nos Estados Unidos.
+
+Similaridades encontradas no banco de dados: 
+
+desde então, a covid-19, doença respiratória causada pelo vírus sars-cov-2, se fez presente em dezenas de países e contaminou mais de 655 milhões de pessoas, com o maior número de casos nos estados unidos 
+Percentual de similaridade:  0.77
+****************************************************************************************************
+
+O país norte-americano registrou ainda 16% das vítimas fatais da doença, que causou a morte de 6,67 milhões de pessoas em escala global.
+
+Similaridades encontradas no banco de dados: 
+
+o país norte-americano registrou ainda 16% das vítimas fatais da doença, que causou a morte de 6,67 milhões de pessoas em escala global 
+Percentual de similaridade:  0.83
+****************************************************************************************************
+
+O primeiro caso.
+
+Similaridades encontradas no banco de dados: 
+
+o primeiro caso 
+Percentual de similaridade:  0.20
+****************************************************************************************************
 

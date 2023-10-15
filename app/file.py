@@ -14,12 +14,15 @@ class File:
 
         dir  = 'file_salve'
         
-        self.fileMonitoramento = os.path.join(dir,"monitoramento.txt")
-        self.fileParagrafos    = os.path.join(dir,"paragrafo_identificados.txt")
-        self.relatorioPDF      = os.path.join(dir,"relatorio.pdf")
+        self.fileMonitoramento   = os.path.join(dir,"monitoramento.txt")
+        self.fileParagrafos      = os.path.join(dir,"paragrafo_identificados.txt")
+        self.relatorioPDF        = os.path.join(dir,"relatorio.pdf")
+        self.fileBanco           = os.path.join(dir,"banco_de_textos.txt")
+        self.conteudoBanco       = '' 
 
         self.CriarArquivos()
- 
+        self.CarregaBanco()
+
 
     def CriarArquivos(self):
         
@@ -80,10 +83,22 @@ class File:
             for paragrafo in paragrafos:
                 if paragrafo not in paragrafos_existentes:
                     arquivo.write(paragrafo + "\n\n")
-                    arquivo.write("Links de pesquisa do Google:\n")
-                    arquivo.write("\n".join(self.LinksSimilar(paragrafo, numLinks)) + "\n\n")
-                    paragrafos_existentes.add(paragrafo)
 
+                    paragraf = paragrafo.lower()
+                    # Remove "." , "?", ou "!" do final do paragrafo
+                    paragraf = paragraf.rstrip('.?!')
+
+                    paragrafos_similiares = self.ConsultaParagrafo(paragraf)
+
+                    if len(paragrafos_similiares) > 0:
+                        arquivo.write("Similaridades encontradas no banco de dados: " + "\n\n")
+                        arquivo.write("\n".join(paragrafos_similiares)+"\n")
+                        arquivo.write(self.Jaccard(paragrafo, paragrafos_similiares))
+                        arquivo.write("\n"+("*"*100)+"\n\n")
+                    else:
+                        arquivo.write("O parágrafo não existe similaridade no banco de dados" + "\n\n")
+                        arquivo.write("\n"+("*"*100)+"\n\n")
+                    paragrafos_existentes.add(paragrafo)
 
     # Função para salvar o conteúdo em PDF com formatação
     def SalvarPDF(self):
@@ -120,3 +135,39 @@ class File:
             return False
 
 
+    def ConsultaParagrafo(self, paragrafo):
+        
+        # dividindo em palavras a frase
+        palavras_a_verificar = paragrafo.split()
+        palavras_no_arquivo  = []
+        partesEncontradas    = []
+
+        # verificando se cada palavra existe no arquivo
+        for palavra in palavras_a_verificar:
+            if palavra in self.conteudoBanco:
+                palavras_no_arquivo.append(palavra)
+
+        # verifcando a parte achada
+        encontrado          = ""
+        for palavra_no_arquivo in palavras_no_arquivo:
+
+            encontrado+= palavra_no_arquivo
+    
+            if encontrado not in self.conteudoBanco:
+                new_str  = encontrado.replace(palavra_no_arquivo, '')
+                if len(encontrado) > 10:
+                    partesEncontradas.append(new_str)
+
+                encontrado = ""
+            else:
+                encontrado+= " "
+        
+        if len(encontrado) > 10:
+            partesEncontradas.append(encontrado)
+    
+        return partesEncontradas
+
+    def CarregaBanco(self):
+
+        with open(self.fileBanco, 'r') as arquivo:
+            self.conteudoBanco = arquivo.read().lower()
