@@ -1,8 +1,5 @@
-import os
-
 class Similar:
 
-        
     def Jaccard(self, paragrafo, paragrafos_encontrados):
 
         paragrafo2 = ''
@@ -22,5 +19,7 @@ class Similar:
 
         # calucar a união
         similaridade  = intersection / uniao
-
-        return f"Percentual de similaridade: {similaridade: .2f}"
+        similaridade = similaridade * 100
+        return f"Percentual de similaridade: {similaridade: .2f} %."
+    
+    

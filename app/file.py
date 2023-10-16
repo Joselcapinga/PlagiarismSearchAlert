@@ -57,7 +57,7 @@ class File:
             return ""
 
     # Função para identificar e salvar parágrafos em 'paragrafo_identificados.txt' com links de pesquisa do Google
-    def IdentificarESalvarParagrafos(self, conteudo, numLinks):
+    def IdentificarESalvarParagrafos(self, conteudo):
 
         delimitadores_sentecas = ['.', '!', '?']
         sentencas = []
@@ -71,7 +71,10 @@ class File:
                     current_sentence = ''
 
         # permito só paragrafo
-        paragrafos = [sentence for sentence in sentencas if any(sentence.endswith(delimitador) for delimitador in delimitadores_sentecas)]
+        paragrafos = [sentence 
+                      for sentence in sentencas 
+                        if any(sentence.endswith(delimitador) 
+                            for delimitador in delimitadores_sentecas)]
 
         # Verifique se o parágrafo não existe antes de salvar em 'paragrafo_identificados.txt'
         paragrafos_existentes = set()
@@ -93,7 +96,7 @@ class File:
                     if len(paragrafos_similiares) > 0:
                         arquivo.write("Similaridades encontradas no banco de dados: " + "\n\n")
                         arquivo.write("\n".join(paragrafos_similiares)+"\n")
-                        arquivo.write(self.Jaccard(paragrafo, paragrafos_similiares))
+                        arquivo.write(self.Jaccard(paragraf, paragrafos_similiares))
                         arquivo.write("\n"+("*"*100)+"\n\n")
                     else:
                         arquivo.write("O parágrafo não existe similaridade no banco de dados" + "\n\n")
@@ -168,6 +171,5 @@ class File:
         return partesEncontradas
 
     def CarregaBanco(self):
-
         with open(self.fileBanco, 'r') as arquivo:
             self.conteudoBanco = arquivo.read().lower()
