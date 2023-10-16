@@ -106,7 +106,7 @@ class File:
     # Função para salvar o conteúdo em PDF com formatação
     def SalvarPDF(self):
         try:
-            conteudo_paragrafos = self.CarregarParagrafosIdentificados()
+            conteudo_paragrafos = self.CarregarConteudo(2)
             if conteudo_paragrafos:
                 # Crie um arquivo PDF com o conteúdo formatado
                 doc = SimpleDocTemplate(self.relatorioPDF, pagesize=letter)
