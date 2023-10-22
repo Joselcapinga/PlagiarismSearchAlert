@@ -1,5 +1,4 @@
 import os
-from googlesearch import search
 from reportlab.lib.pagesizes import letter
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
 from reportlab.lib.styles import getSampleStyleSheet
@@ -13,6 +12,9 @@ class File:
     def __init__(self):
 
         dir  = 'file_salve'
+
+        if not os.path.exists('file_salve'):
+             os.makedirs('file_salve')
         
         self.fileMonitoramento   = os.path.join(dir,"monitoramento.txt")
         self.fileParagrafos      = os.path.join(dir,"paragrafo_identificados.txt")
@@ -94,12 +96,12 @@ class File:
                     paragrafos_similiares = self.ConsultaParagrafo(paragraf)
 
                     if len(paragrafos_similiares) > 0:
-                        arquivo.write("Similaridades encontradas no banco de dados: " + "\n\n")
+                        arquivo.write("Similaridades encontradas no banco de textos: " + "\n\n")
                         arquivo.write("\n".join(paragrafos_similiares)+"\n")
                         arquivo.write(self.Jaccard(paragraf, paragrafos_similiares))
                         arquivo.write("\n"+("*"*100)+"\n\n")
                     else:
-                        arquivo.write("O parágrafo não existe similaridade no banco de dados" + "\n\n")
+                        arquivo.write("O parágrafo não existe similaridade no banco de textos" + "\n\n")
                         arquivo.write("\n"+("*"*100)+"\n\n")
                     paragrafos_existentes.add(paragrafo)
 

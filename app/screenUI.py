@@ -1,6 +1,7 @@
 import PySimpleGUI as sg
 import threading
 import time
+import datetime
 import app.file as file
 import app.similar as similar
 
@@ -14,13 +15,15 @@ class ScreenUI(file.File, similar.Similar):
         self.quantLinks     = 4 
         self.statusResult   = True 
         self.tempoChecagem  = 20    
+        ano_atual = datetime.datetime.now().year
 
         sg.theme('LightGreen')
         sg.set_options(element_padding=(0, 0))
 
         menu = [
             ['&File', ['&Salvar o conteúdo', '&Relatório PDF','&Exportar .doc', '&Sair X']],
-            ['&Ajudas', ['&Manual de usabilidade da ferramenta']]
+            ['&Ajudas', ['&Manual de usabilidade da ferramenta']],
+            ['&Sobre', ['&Sobre a Plagiarism Search Alert']],
         ]
 
         #criação do layout
@@ -47,8 +50,11 @@ class ScreenUI(file.File, similar.Similar):
                 sg.Button("Status Paragrafos e consulta no banco de textos: Ativo", font=('Helvetica', 12, 'bold'), key='-StusResultado-'), 
                 sg.Button("Relatório PDF", font=('Helvetica', 12, 'bold')), 
                 sg.Button("Sair X", font=('Helvetica', 12, 'bold')),
-                
-             ]  # Botões na mesma linha
+             ],  # Botões na mesma linha
+
+                [sg.Text("", size=(40, 1))],  # Adicionar espaço vertical aqui
+                [sg.Text(f"Plagiarism Search Alert @ {ano_atual}. Versão 1.0.0 ",size=(40, 1), justification='center')],
+
         ]
 
         # configuração dos elementos da tela
@@ -90,6 +96,19 @@ class ScreenUI(file.File, similar.Similar):
                 "7. Botão 'Status Paragrafos e consulta no banco de textos' ativa e desativa a consulta no banco de textos.",
                 title="Instruções de Ajuda"
                 )
+        
+    def Sobre(self):
+        
+        sg.popup("Sbre:",
+                "Nome da Ferramenta: Plagiarism Search Alert",
+                "Autor: José Lohame Capinga",
+                "Orientador: Prof. Dr. João Paulo Aires",
+                "Universidade Tecnológica Federal do Paraná (UTFPR) - Campus Ponta Grossa",
+                "Trabalho de Conclusão de Curso - Bacharelado em Ciência da Computação.",
+                "",
+                title="Sobre a Sobre a Plagiarism Search Alert"
+                )
+
 
     def LoopUI(self):
 
@@ -119,6 +138,9 @@ class ScreenUI(file.File, similar.Similar):
 
             elif event == "Manual de usabilidade da ferramenta":
                 self.AjudassMenu()
+            
+            elif event == "Sobre a Plagiarism Search Alert":
+                self.Sobre()
 
             elif event == "Exportar .doc":
                 conteudo = values["-EDITAR-"]

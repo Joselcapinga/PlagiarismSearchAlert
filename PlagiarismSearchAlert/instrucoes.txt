@@ -1,0 +1,10 @@
+Como executar no windows ?
+Clicar no main
+
+
+Como executar no Linux ?
+
+./main
+
+
+Não excluir a pasta "file_salve" onde fica os arquivos que não usados na execução da ferramenta.
